@@ -1,0 +1,8 @@
+# Application settings for dask_task_app
+host: "127.0.0.1"
+port: 8050
+debug: false
+
+pages:
+  - category: "tasks_planner"
+    markdown_dir: "/home/roudra/Projects/dask_task_app/idea"
