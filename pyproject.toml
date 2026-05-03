@@ -1,0 +1,33 @@
+[project]
+name = "dask-task-app"
+version = "0.1.0"
+description = "Minimal Dash app scaffold for markdown task pages"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "dash>=2.18.0",
+  "pydantic>=2.8.0",
+  "pydantic-settings>=2.3.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.2.0",
+  "ruff>=0.6.0",
+  "pre-commit>=3.8.0",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

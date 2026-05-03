@@ -1,0 +1,27 @@
+.git
+.gitignore
+.dockerignore
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Local environments and caches
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Local/project metadata
+.agents/
+.codex
+.idea/
+.vscode/
+
+# Tests and planning docs (optional for runtime image)
+tests/
+idea/
